@@ -1,0 +1,75 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="MomentumApp.css"></link>
+        <title>Momentum App Project</title>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <div id="to-do-list-pop-up" class="hidden5">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeTDL()">&times;</a>
+            <h4 id="to-do-list-header">To-Do List</h4>
+
+            <form id="to-do-form">
+                <input class="to-do-lists" type="text" placeholder="Add items to your to-do list" size=28 required />
+            </form>
+            
+            <ul id="to-do-list"></ul>
+        </div>
+
+        <span id="to-do-list-button" onclick="openTDL()">To-Do List</span>
+
+        <div id="mySidenav" class="sidenav"> 
+            <button class="buttons" id="change-name">change name</button>
+            <button class="buttons" id="change-main-focus">change main focus</button>
+            <button class="buttons" id="change-to-random-quote">change to random quote</button>
+            <button class="buttons" id="change-to-own-quote">change to own quote</button>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        </div>
+
+        <span id="openButton" onclick="openNav()">&#9776;</span>
+
+        <h1 id="currentTime"></h1>
+
+        <form id="ask-name" class="hidden">
+            <input
+              class="ask-name-input"
+              required
+              type="text"
+              placeholder="What is your name?"
+            />
+        </form>
+
+        <h1 id="greeting" class="hidden"></h1>
+
+        <form id="ask-main-focus" class="hidden1">
+            <input
+              class="ask-main-focus-input"
+              required
+              type="text"
+              size=50
+              placeholder="What is your main focus for today?"
+            />
+        </form>
+
+        <h2 id="main-focus" class="hidden1"></h2>
+
+        <div id="quotes">
+            <span></span>
+            <span></span>
+        </div>
+
+        <form id="add-quote" class="hidden3">
+            <input
+              class="add-quote-input"
+              required
+              type="text"
+              size=50
+              placeholder="Add your own quote."
+            />
+        </form>
+
+        <p id="quote" class="hidden3"></p>
+
+        <script src="MomentumApp.js"></script>
+    </body>
+</html>
